@@ -43,7 +43,7 @@ export default function App() {
         />
         <Stack.Screen name="Orações" component={PrayerScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/>
         <Stack.Screen name="Calendario" component={CalendarScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/>
-        <Stack.Screen name="Rosario" component={RosaryScreen} /> 
+        <Stack.Screen name="Rosario" component={RosaryScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/> 
       </Stack.Navigator>
     </NavigationContainer>
   );
