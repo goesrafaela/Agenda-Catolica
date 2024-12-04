@@ -13,6 +13,7 @@ type RootStackParamList = {
   Orações: undefined;
   Calendario: undefined;
   Rosario: undefined;
+  LeituraDiaria: undefined;
 };
 
 export default function HomeScreen() {
@@ -45,6 +46,12 @@ export default function HomeScreen() {
           onPress={() => navigation.navigate("Rosario")}
         >
           <Text style={styles.buttonText}>Rosário</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("LeituraDiaria")}
+        >
+          <Text style={styles.buttonText}>Leitura Diaria</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>

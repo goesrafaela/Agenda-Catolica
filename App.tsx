@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './src/screens/HomeScreens';
-import PrayerScreen from './src/screens/PrayerScreen';
-import CalendarScreen from './src/screens/CalendarScreen';
+
+
 import * as Font from 'expo-font'; // Pacote para carregar fontes
 import { ActivityIndicator, View, StyleSheet } from 'react-native';
+
+// Telas importadas
+import HomeScreen from './src/screens/HomeScreens';
+import CalendarScreen from './src/screens/CalendarScreen';
+import PrayerScreen from './src/screens/PrayerScreen';
 import RosaryScreen from './src/screens/RosaryScreen';
+import DailyReadingScreen from './src/screens/DailyReadingScreen';
 
 const Stack = createStackNavigator();
 
@@ -44,6 +49,7 @@ export default function App() {
         <Stack.Screen name="Orações" component={PrayerScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/>
         <Stack.Screen name="Calendario" component={CalendarScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/>
         <Stack.Screen name="Rosario" component={RosaryScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/> 
+        <Stack.Screen name="LeituraDiaria" component={DailyReadingScreen} options={{ headerTitleStyle: { fontFamily: 'DeliusSwashCaps' } }}/> 
       </Stack.Navigator>
     </NavigationContainer>
   );
